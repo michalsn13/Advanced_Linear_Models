@@ -100,7 +100,7 @@ table=data.frame(matrix(c(mapply(f,a=T,b=seq(1,4)),mapply(f,a=F,b=seq(1,4)),
                           round(c(betas[1]+betas[2],betas[1]+betas[2]+betas[3]+betas[6],betas[1]+betas[2]+betas[4]+betas[7],betas[1]+betas[2]+betas[5]+betas[8],betas[1],betas[1]+betas[3],betas[1]+betas[4],betas[1]+betas[5]),4)),ncol=8,byrow=T,))
 colnames(table)=c("R 8-12","R 12-16","R 16-20","R 20-23","W 8-12","W 12-16","W 16-20","W 20-23")
 table[nrow(table)+1,]=round(exp(as.numeric(table[nrow(table),])),4)
-rownames(table)=c("³¹czna liczba klientów","œrednia liczba klientów","postaæ predyktora liniowego","wartoœæ predyktora liniowego","wartoœæ predykowana")
+rownames(table)=c("Â³Â¹czna liczba klientÃ³w","Å“rednia liczba klientÃ³w","postaÃ¦ predyktora liniowego","wartoÅ“Ã¦ predyktora liniowego","wartoÅ“Ã¦ predykowana")
 library(xtable)
 xtable(table)
 #Zadanie 6
